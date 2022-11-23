@@ -2,8 +2,9 @@
 print("Введите число N");
 n = int(input())
 l = []
-for i in range(0, n):
-    l.insert(i,((1+1/n)**n))
+for i in range(1, n+1):
+    l.insert(i,((1+1/i)**i))
+print(l);
 sum = 0
 for i in l:
     sum += i
